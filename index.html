@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tic Tac Toe</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit&family=Palette+Mosaic&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1>Tic Tac Toe</h1>
+
+    <div>
+        <p></p>
+    </div>
+
+    <div>
+        <button id="btn1" class="gameButton" onclick="clickedBtn('btn1', 0, 0)"></button>
+        <button id="btn2" class="gameButton" onclick="clickedBtn('btn2', 0, 1)"></button>
+        <button id="btn3" class="gameButton" onclick="clickedBtn('btn3', 0, 2)"></button>
+    </div>
+
+    <div>
+        <button id="btn4" class="gameButton" onclick="clickedBtn('btn4', 1, 0)"></button>
+        <button id="btn5" class="gameButton" onclick="clickedBtn('btn5', 1, 1)"></button>
+        <button id="btn6" class="gameButton" onclick="clickedBtn('btn6', 1, 2)"></button>
+    </div>
+
+    <div>
+        <button id="btn7" class="gameButton" onclick="clickedBtn('btn7', 2, 0)"></button>
+        <button id="btn8" class="gameButton" onclick="clickedBtn('btn8', 2, 1)"></button>
+        <button id="btn9" class="gameButton" onclick="clickedBtn('btn9', 2, 2)"></button>
+    </div>
+
+    <div>
+        <p></p>
+    </div>
+
+    <div>
+        <button id="resetBtn" onclick="resetGame()">Reset Game</button>
+    </div>
+
+    <div>
+        <p id="winner"></p>
+    </div>
+
+    <script src='main.js'></script>
+</body>
+
+</html>

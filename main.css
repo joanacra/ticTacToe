@@ -1,0 +1,91 @@
+:root {
+    --main-light-color: #d9e6f2;
+    --secondary-light-color: #6699cc;
+    --main-disabled-light-color: rgba(0, 0, 26, 0.75);
+    --main-active-light-color: #d8e0e6;
+    --secondary-active-light-color: #89a7fa;
+    --main-dark-color: #00001a;
+}
+
+body {
+    background-color: var(--main-light-color);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Palette Mosaic', cursive;
+    font-size: 2.5em;
+    color: var(--main-dark-color);
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--main-dark-color);
+    background-color: var(--main-light-color);
+    border: 3px solid var(--main-dark-color);
+}
+
+button:not([disabled]):active {
+    background-color: var(--main-active-light-color);
+}
+
+button:disabled {
+    color: var(--main-disabled-light-color);
+}
+
+#btn1,
+#btn4,
+#btn7 {
+    border-left-width: 0px;
+}
+
+#btn3,
+#btn6,
+#btn9 {
+    border-right-width: 0px;
+}
+
+#btn1,
+#btn2,
+#btn3 {
+    border-top-width: 0px;
+}
+
+#btn7,
+#btn8,
+#btn9 {
+    border-bottom-width: 0px;
+}
+
+#resetBtn {
+    height: 35px;
+    width: 120px;
+    font-size: 1em;
+    font-weight: normal;
+    color: var(--main-dark-color);
+    border-radius: 8px;
+    border-width: 2px;
+    background-color: var(--secondary-light-color);
+}
+
+#resetBtn:active {
+    background-color: var(--secondary-active-light-color);
+}
+
+#winner {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--main-dark-color);
+}
