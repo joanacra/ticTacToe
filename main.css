@@ -8,12 +8,16 @@
 }
 
 body {
+    height: 100vh;
     background-color: var(--main-light-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h1 {
     text-align: center;
-    font-family: 'Palette Mosaic', cursive;
+    font-family: "Palette Mosaic", cursive;
     font-size: 2.5em;
     color: var(--main-dark-color);
 }
@@ -28,7 +32,7 @@ button {
     text-align: center;
     width: 100px;
     height: 100px;
-    font-family: 'Kanit', sans-serif;
+    font-family: "Kanit", sans-serif;
     font-size: 2.5em;
     font-weight: bold;
     color: var(--main-dark-color);
@@ -84,8 +88,13 @@ button:disabled {
 }
 
 #winner {
-    font-family: 'Kanit', sans-serif;
+    font-family: "Kanit", sans-serif;
     font-size: 2em;
     font-weight: bold;
     color: var(--main-dark-color);
+}
+
+#winner::after {
+    content: "";
+    display: inline-block;
 }
